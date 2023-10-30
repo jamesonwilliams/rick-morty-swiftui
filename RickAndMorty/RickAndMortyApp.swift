@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import Observation
 
 @main
 struct RickAndMortyApp: App {
-    var router = Router()
+    let router = Router()
     
     var body: some Scene {
         WindowGroup {

@@ -12,7 +12,7 @@ class CharacterDetailViewModel {
     internal var uiState: UiState = .loading
     
     @ObservationIgnored
-    private let repository = CharacterRepository()
+    private let repository = CharacterRepository.shared
     
     let characterId: Int
     

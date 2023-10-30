@@ -13,6 +13,7 @@ Q4 2023.
 
 ## Technical Choices
 
+- "Offline-first" operation with SwiftData
 - SwiftUI w/ [Observation](https://developer.apple.com/documentation/observation)
 - MVVM w/ uni-directional data flow
 - [Loading/Content/Error](https://medium.com/trendyol-tech/simple-ui-problem-states-loading-error-empty-and-content-cbf924b39fcb) pattern in UI & Data layers
@@ -23,5 +24,4 @@ Q4 2023.
 
 ## To do
 - Tests
-- Persistence
 

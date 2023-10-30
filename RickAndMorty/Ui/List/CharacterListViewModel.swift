@@ -12,7 +12,7 @@ class CharacterListViewModel {
     internal var uiState: UiState = UiState.initial()
     
     @ObservationIgnored
-    private let repository = CharacterRepository()
+    private let repository = CharacterRepository.shared
     
     init() {
         onEvent(event: .initialLoad)
@@ -44,7 +44,11 @@ class CharacterListViewModel {
                 currentPage: uiState.currentPage + 1,
                 displayState: .content,
                 characterSummaries: uiState.characterSummaries + characters.map {
-                    CharacterSummary(id: $0.id, name: $0.name, imageUrl: $0.image)
+                    CharacterSummary(
+                        id: $0.id,
+                        name: $0.name,
+                        imageUrl: $0.image
+                    )
                 }
             )
         case .failure(let error):

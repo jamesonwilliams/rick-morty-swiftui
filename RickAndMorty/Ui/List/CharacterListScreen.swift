@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CharacterListScreen: View {
     @Environment(Router.self) var router
-    
     @State var viewModel = CharacterListViewModel()
     
     var body: some View {
