@@ -3,7 +3,6 @@
 //
 //   let characterListResponse = try? JSONDecoder().decode(CharacterListResponse.self, from: jsonData)
 
-import Foundation
 
 // MARK: - CharacterListResponse
 struct CharacterListResponse: Codable {

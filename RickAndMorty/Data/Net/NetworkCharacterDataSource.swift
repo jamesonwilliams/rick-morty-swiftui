@@ -6,27 +6,15 @@
 //
 
 import Foundation
-import Alamofire
 
 class NetworkCharacterDataSource {
-    func getCharacter(characterId: Int) async -> Result<NetworkCharacter, Error> {
-        let apiEndpoint = "https://rickandmortyapi.com/api/character/\(characterId)"
-        let dataTask = AF.request(apiEndpoint).serializingDecodable(NetworkCharacter.self)
-        switch(await dataTask.result) {
-        case.success(let response):
-            return Result.success(response)
-        case.failure(let error):
-            return Result.failure(error)
-        }
-    }
-    
     func fetchCharacters(page: Int) async -> Result<[NetworkCharacter], Error> {
-        let apiEndpoint = "https://rickandmortyapi.com/api/character/?page=\(page)"
-        let dataTask = AF.request(apiEndpoint).serializingDecodable(CharacterListResponse.self)
-        switch(await dataTask.result) {
-        case.success(let response):
+        do {
+            let url = URL(string: "https://rickandmortyapi.com/api/character/?page=\(page)")!
+            let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
+            let response = try JSONDecoder().decode(CharacterListResponse.self, from: data)
             return Result.success(response.results)
-        case.failure(let error):
+        } catch {
             return Result.failure(error)
         }
     }

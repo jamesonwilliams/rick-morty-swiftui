@@ -5,8 +5,6 @@
 //  Created by Jameson Williams on 10/24/23.
 //
 
-import Foundation
-
 class CharacterRepository {
     private let networkCharacterDataSource: NetworkCharacterDataSource
     private let dbCharacterDataSource: DbCharacterDataSource

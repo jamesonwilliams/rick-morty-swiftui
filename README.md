@@ -18,7 +18,6 @@ Q4 2023.
 - MVVM w/ uni-directional data flow
 - [Loading/Content/Error](https://medium.com/trendyol-tech/simple-ui-problem-states-loading-error-empty-and-content-cbf924b39fcb) pattern in UI & Data layers
 - [NavigationStack Router](https://blorenzop.medium.com/routing-navigation-in-swiftui-f1f8ff818937)
-- [Alamofire](https://github.com/Alamofire/Alamofire)
 - [Swift async/await](https://www.hackingwithswift.com/swift/5.5/async-await)
 
 ## To do
