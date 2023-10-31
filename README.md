@@ -20,7 +20,6 @@ Q4 2023.
 - [NavigationStack Router](https://blorenzop.medium.com/routing-navigation-in-swiftui-f1f8ff818937)
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 - [Swift async/await](https://www.hackingwithswift.com/swift/5.5/async-await)
-- [CachedAsyncImage](https://github.com/lorenzofiamingo/swiftui-cached-async-image#swiftui-cachedasyncimage-%EF%B8%8F)
 
 ## To do
 - Tests

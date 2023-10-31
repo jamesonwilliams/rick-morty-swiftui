@@ -28,7 +28,6 @@
 		28CF60662AE8DF00002CAF1A /* LoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF60652AE8DF00002CAF1A /* LoadingUI.swift */; };
 		28CF60682AE8DF1B002CAF1A /* ErrorUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF60672AE8DF1B002CAF1A /* ErrorUI.swift */; };
 		28CF606A2AE8ECE1002CAF1A /* CharacterGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF60692AE8ECE1002CAF1A /* CharacterGridItem.swift */; };
-		28CF606D2AE8EEC5002CAF1A /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF606C2AE8EEC5002CAF1A /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28CF605F2AE8CE0E002CAF1A /* Alamofire in Frameworks */,
-				28CF606D2AE8EEC5002CAF1A /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +191,6 @@
 			name = RickAndMorty;
 			packageProductDependencies = (
 				28CF605E2AE8CE0E002CAF1A /* Alamofire */,
-				28CF606C2AE8EEC5002CAF1A /* CachedAsyncImage */,
 			);
 			productName = RickAndMorty;
 			productReference = 28CF60382AE8C6F6002CAF1A /* RickAndMorty.app */;
@@ -225,7 +222,6 @@
 			mainGroup = 28CF602F2AE8C6F6002CAF1A;
 			packageReferences = (
 				28CF605D2AE8CE0E002CAF1A /* XCRemoteSwiftPackageReference "Alamofire" */,
-				28CF606B2AE8EEC5002CAF1A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = 28CF60392AE8C6F6002CAF1A /* Products */;
 			projectDirPath = "";
@@ -486,14 +482,6 @@
 				minimumVersion = 5.8.0;
 			};
 		};
-		28CF606B2AE8EEC5002CAF1A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -501,11 +489,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28CF605D2AE8CE0E002CAF1A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		28CF606C2AE8EEC5002CAF1A /* CachedAsyncImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28CF606B2AE8EEC5002CAF1A /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
-			productName = CachedAsyncImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CachedAsyncImage
 
 struct CharacterGridItem: View {
     let characterSummary: CharacterSummary
@@ -20,7 +19,7 @@ struct CharacterGridItem: View {
             Text(characterSummary.name)
                 .zIndex(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                 .frame(height: 30)
-            CachedAsyncImage(url: URL(string: characterSummary.imageUrl)) { image in
+            AsyncImage(url: URL(string: characterSummary.imageUrl)) { image in
                 image
                     .resizable()
                     .scaledToFit()

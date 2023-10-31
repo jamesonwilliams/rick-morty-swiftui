@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
-import CachedAsyncImage
 
 struct CharacterDetailUI: View {
     let characterDetails: CharacterDetails
     
     var body: some View {
         VStack(alignment: .leading) {
-            CachedAsyncImage(url: URL(string: characterDetails.imageUrl)) {
+            AsyncImage(url: URL(string: characterDetails.imageUrl)) {
                 if let image = $0.image {
                     image
                         .resizable()
